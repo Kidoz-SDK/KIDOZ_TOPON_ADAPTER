@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "kidoz.android.native.topon"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 101
+        versionName "1.0.1"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            shrinkResources false
+
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+    compile group: 'org.greenrobot', name: 'eventbus', version: '3.0.0'
+    compile 'com.kidoz.sdk:KidozSDK:0.8.8.8@aar'
+
+}
+
+configurations.all {
+    resolutionStrategy.cacheDynamicVersionsFor 0, 'minutes'
+}
+
+
+
