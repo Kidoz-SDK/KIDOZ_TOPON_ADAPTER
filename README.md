@@ -1,6 +1,7 @@
 
 
 
+
 # KIDOZ_TOPON_ADAPTER
 Kidoz TopOn mediation adapter Version 1.0 
 Built and tested with TopOn SDK v5.7.1
@@ -16,21 +17,20 @@ Built and tested with TopOn SDK v5.7.1
 3.1. You can get Kidoz SDK as a Gradle dependency (together with it's needed dependencies) using the following lines:
 ```
     compile group: 'org.greenrobot', name: 'eventbus', version: '3.0.0'
-    compile 'com.kidoz.sdk:KidozSDK:8.9.1@aar'
 ```
 3.2. Please make sure you have a set up Kidoz publisher account.
+3.3. Add the Kidoz SDK by coping `KidozSDK.aar` to the libs folder in your project.
+3.4. Add the Kidoz TopOn mediation plugin by coping `` kidoz-topon-release.aar`` to the libs folder in your project.
 
-3.3. Add the Kidoz TopOn mediation plugin by coping `` kidoz-topon-release.aar`` to the libs folder in your project.
-
-3.4 Make sure you have added libs folder to your dependencies by:
+3.5 Make sure you have added libs folder to your dependencies by:
 
  ```
   implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')  
 ```
 
-3.5  Add Custom Network in TopOn's Network , Fill in the Network Name as explained [HERE](https://docs.toponad.com/#/en-us/android/NetworkAccess/customnetwork/customnetwork):
+3.6  Add Custom Network in TopOn's Network , Fill in the Network Name as explained [HERE](https://docs.toponad.com/#/en-us/android/NetworkAccess/customnetwork/customnetwork):
 
-3.6  Fill in the Adaper's Class Name for each ad type :
+3.7  Fill in the Adaper's Class Name for each ad type :
  
  ```
  Rewarded Video: com.kidoz.mediation.topon.adapters.KidozTopOnMediationRewardedAdapter

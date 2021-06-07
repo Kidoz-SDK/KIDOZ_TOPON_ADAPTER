@@ -1,6 +1,9 @@
 
 # Changelog
 
+## 8.9.2
+- Kidoz SDK stability improved
+- Crash fix
 ## 8.9.1
 -  ANR fix
 ## 8.9.0

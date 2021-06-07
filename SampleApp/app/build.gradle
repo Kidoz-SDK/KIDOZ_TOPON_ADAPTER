@@ -35,8 +35,6 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
     compile group: 'org.greenrobot', name: 'eventbus', version: '3.0.0'
-    compile 'com.kidoz.sdk:KidozSDK:8.9.1@aar'
-
 }
 
 configurations.all {
